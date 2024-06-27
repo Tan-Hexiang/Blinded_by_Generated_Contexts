@@ -156,7 +156,7 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <h2 class="title is-3">Context-Conflicting Datasets</h2>
-       <h3 class="title is-3">We construct context-conflicting datasets where only one of generated and retrieved contexts contain correct answer.</h3>
+       <h3 class="title is-3">We construct context-conflicting datasets where only one of generated and retrieved contexts contain correct answer for the question.</h3>
         <h3 class="title is-3">
           <ul>
             <li><strong>AIG:</strong> Answer In Generated Contexts</li>
@@ -166,7 +166,7 @@
        <div class="item">
         <img src="static/images/datasets.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          The framework of constructing context-conflicting datasets.
         </h2>
       </div>
   </div>
@@ -174,6 +174,48 @@
 </div>
 </section>
 <!--  End image carousel -->
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <h2 class="title is-3">LLMs Prefer Generated Contexts</h2>
+       <h3 class="title is-3">LLMs prefer generated contexts, even when they are <strong></strong>incorrect</strong>. This bias is consistent across various generator, reader and retriever models.
+      </h3>
+       <div class="item">
+        <img src="static/images/bias.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          The extent of LLMs' bias towards generated contexts on NQ-AIR datasets where generated contexts are wrong.
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <h2 class="title is-3">Why LLMs Prefer Generated Contexts?</h2>
+       <div class="item">
+        <h3 class="title is-3">
+          <ul>
+            <li><strong>Confirmation bias is not a key factor</strong>: LLMs maintain a significant preference for generated contexts when they contain information inconsistent with LLMs’ parametric knowledge.</li>
+            <li><strong>Text similarity is a significant factor</strong>: compared to retrieved contexts, generated contexts typically exhibit a higher degree of similarity to the questions, even when they contain incorrect information. The samples with a larger similarity gap between generated and retrieved contexts exhibit a more pronounced bias.</li>
+            <li><strong>Semantic completeness matters</strong>: LLMs tend to favor contexts with semantic integrity. The segmentation process used in retrieved contexts may disrupt their completeness, thereby hindering their full utilization in LLMs.</li>
+          </ul>
+        </h3>
+        <img src="static/images/similarity.png" alt="MY ALT TEXT"/>
+        <h3 class="subtitle has-text-centered">
+          Generated contexts typically exhibit a higher degree of similarity to the questions.
+        </h3>
+      </div>
+  </div>
+</div>
+</div>
+</section>
 
 
 
