@@ -185,7 +185,7 @@
       </div>
       <div class="columns is-centered has-text-centered">
         <img src="static/images/bias.png" alt="MY ALT TEXT" style="width: 50%; height: 50%;"/>
-        <h3 class="subtitle has-text-left">
+        <h3 class="subtitle has-text-centered">
           Figure 2: The extent of LLMs' bias towards generated contexts on NQ-AIR datasets where generated contexts are wrong.
         </h3>
     </div>
@@ -198,7 +198,7 @@
     <div class="container">
        <h2 class="title is-3">Why LLMs Prefer Generated Contexts?</h2>
        <div class="content">
-          <ul>
+          <ul style="text-align: left;">
             <li><strong>Confirmation bias is not a key factor</strong>: LLMs maintain a significant preference for generated contexts when they contain information inconsistent with LLMs’ parametric knowledge.</li>
             <li><strong>Text similarity is a significant factor</strong>: compared to retrieved contexts, generated contexts typically exhibit a higher degree of similarity to the questions, even when they contain incorrect information. The samples with a larger similarity gap between generated and retrieved contexts exhibit a more pronounced bias.</li>
             <li><strong>Semantic completeness matters</strong>: LLMs tend to favor contexts with semantic integrity. The segmentation process used in retrieved contexts may disrupt their completeness, thereby hindering their full utilization in LLMs.</li>
@@ -206,7 +206,7 @@
         </div>
         <div class="columns is-centered has-text-centered"> 
         <img src="static/images/similarity.png" alt="MY ALT TEXT" style="width: 50%; height: 50%;" />
-        <h3 class="subtitle has-text-left">
+        <h3 class="subtitle has-text-centered">
           Figure 3: Generated contexts typically exhibit a higher degree of similarity to the questions.
         </h3>
       </div>
