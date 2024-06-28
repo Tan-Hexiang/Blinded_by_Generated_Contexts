@@ -25,6 +25,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Blinded by Generated Contexts: How Language Models Merge Generated and Retrieved Contexts for Open-Domain QA?</title>
+  <style>
+    .image-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .image-container img {
+        width: 50%;
+        height: 50%;
+    }
+    .image-caption {
+        text-align: center;
+        font-size: 1.25em;
+        margin-top: 10px;
+    }
+</style>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -183,9 +198,9 @@
        <p>LLMs prefer generated contexts, even when they are <strong></strong>incorrect</strong>. This bias is consistent across various generator, reader and retriever models.
        </p>
       </div>
-      <div class="columns is-centered">
-        <img src="static/images/bias.png" alt="MY ALT TEXT" style="width: 50%; height: 50%;"/>
-        <h3 class="subtitle has-text-centered">
+      <div class="image-container">
+        <img src="static/images/bias.png" alt="MY ALT TEXT"/>
+        <h3 class="image-caption">
           Figure 2: The extent of LLMs' bias towards generated contexts on NQ-AIR datasets where generated contexts are wrong.
         </h3>
     </div>
